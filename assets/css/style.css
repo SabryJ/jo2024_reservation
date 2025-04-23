@@ -1,0 +1,92 @@
+/* Cela limitera la taille des images du carousel pour éviter qu'elles prennent tout l'écran */
+.carousel-inner img {
+    max-height: 500px;  /* Modifie la hauteur selon tes besoins */
+    object-fit: cover;  /* Cela évite que l'image soit déformée */
+  }
+  
+.carousel-item img {
+    object-fit: cover; /* Pour que l'image s'adapte sans se déformer */
+    width: 100%; /* Assurer que l'image prend toute la largeur du conteneur */
+    height: 100%; /* Ajuster la hauteur pour éviter les déformations */
+}
+.carousel-caption h5 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+#countdown {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff5733; /* Choisir une couleur vive pour attirer l'attention */
+    margin-top: 10px;
+  }
+
+.carousel-caption {
+    bottom: 25%;
+    text-shadow: 2px 2px 6px #000;
+  }
+
+  .navbar-brand img {
+    margin-right: 8px;
+    border-radius: 6px;
+  }
+  
+  .navbar .btn {
+    min-width: 110px;
+  }
+  
+  .navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: #0d6efd !important;
+  }
+/* Ajout de CSS pour les effets pour banner offres */
+  .search-bar {
+    width: 50%; /* Largeur initiale */
+  }
+
+  .search-bar:hover {
+    width: 100%; /* Largeur lorsqu'on survole */
+  }
+
+  /* Espace entre le titre, logo et barre de recherche */
+  .container-fluid {
+    margin-top: 20px;
+  }
+
+  .panier-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff6600;
+    color: white;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.panier-icon span {
+    font-weight: bold;
+}
+
+.panier {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.panier div {
+    margin-bottom: 10px;
+}
+.panier-icon {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.panier-icon .badge {
+  font-size: 0.8rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+}

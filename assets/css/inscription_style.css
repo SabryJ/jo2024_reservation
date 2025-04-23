@@ -1,0 +1,114 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(120deg, #0055a5, #00c3ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.form-container {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 400px;
+}
+h2 {
+    text-align: center;
+    color: #0055a5;
+    margin-bottom: 25px;
+}
+input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0055a5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+button:hover {
+    background-color: #003f7f;
+}
+.message {
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.error {
+    background-color: #ffe0e0;
+    color: #c00000;
+}
+.success {
+    background-color: #e0ffe0;
+    color: #007500;
+}
+#passwordCriteria {
+    color: #666;
+    font-size: 12px;
+}
+.invalid {
+    color: red;
+}
+.valid {
+    color: green;
+}
+/* Exemple d'un style pour le formulaire de connexion */
+.form-container {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+h2 {
+    text-align: center;
+    color: #0055a5;
+    margin-bottom: 25px;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0055a5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+button:hover {
+    background-color: #003f7f;
+}
+.message {
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.error {
+    background-color: #ffe0e0;
+    color: #c00000;
+}
+.success {
+    background-color: #e0ffe0;
+    color: #007500;
+}

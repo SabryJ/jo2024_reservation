@@ -1,0 +1,265 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.carte {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.carte img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.carte .contenu {
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.titre {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 14px;
+    color: #555;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.prix {
+    font-size: 18px;
+    font-weight: bold;
+    color: #008000;
+}
+
+.btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+.offres-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 30px;
+}
+
+.card-offre {
+    flex: 0 1 calc(33.333% - 40px); /* 3 cartes sur 12 colonnes */
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-offre:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-offre img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card-offre h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.card-offre p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.offre-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prix {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #28a745;
+}
+
+.btn-reserver {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-reserver:hover {
+    background-color: #0056b3;
+}
+
+.banner {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.banner.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.banner-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    filter: brightness(0.6); /* pour assombrir légèrement l'image */
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    max-width: 600px;
+}
+
+.logo-banner {
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.banner-title {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.banner-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.banner-button {
+    display: inline-block;
+    background-color: #FFD700;
+    color: black;
+    padding: 12px 24px;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.banner-button:hover {
+    background-color: #e6c200;
+    transform: scale(1.05);
+}
+
+.card {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-in-out;
+}
+
+.card.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Styles pour le champ de quantité dans la carte */
+.card-offre form input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.card-offre form button {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.card-offre form button:hover {
+    background-color: #0056b3;
+}
+.reserver-container {
+    max-width: 600px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+}
+
+.reserver-container label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.reserver-container select,
+.reserver-container input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}

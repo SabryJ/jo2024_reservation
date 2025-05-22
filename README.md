@@ -1,8 +1,3 @@
-Bien sûr ! Voici ton fichier `README.md` prêt à être copié dans ton dépôt GitHub (format Markdown) :
-
----
-
-````markdown
 # 🎟️ Projet de Réservation d'e-Tickets - JO 2024
 
 Une application web sécurisée permettant aux utilisateurs de réserver des billets pour les événements des Jeux Olympiques 2024.  

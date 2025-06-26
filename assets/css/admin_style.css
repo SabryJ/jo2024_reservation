@@ -1,0 +1,80 @@
+/* Conteneur principal du formulaire */
+.form-container {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Titre du formulaire */
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #212529;
+  font-weight: bold;
+}
+
+/* Champs du formulaire */
+.form-container input,
+.form-container textarea,
+.form-container select {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  background-color: #fff;
+}
+
+/* Labels optionnels */
+.form-container label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+  color: #495057;
+}
+
+/* Boutons */
+.form-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+  background-color: #084cdf;
+}
+
+/* Messages de confirmation / erreur */
+.alert {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.alert-success {
+  background-color: #d1e7dd;
+  color: #0f5132;
+  border: 1px solid #badbcc;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #842029;
+  border: 1px solid #f5c2c7;
+}
+
+/* Lien de retour */
+.back-link {
+  display: block;
+  margin-top: 20px;
+  text-align: center;

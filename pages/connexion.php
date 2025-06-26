@@ -28,6 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         if ($user && password_verify($mdp, $user['mot_de_passe'])) {
             $_SESSION['id_utilisateur'] = $user['id_utilisateur'];
             $_SESSION['username'] = $user['nom_utilisateur'];
+            $_SESSION['is_admin'] = false; // l'utilisateur normal n'est pas admin
         
             // ✅ Redirection après connexion
             $redirect = $_SESSION['redirect_after_login'] ?? 'index.php';
@@ -69,6 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         <div class="mt-3">
             <p>Pas encore de compte ? <a href="inscription.php">Inscrivez-vous ici</a></p>
+            <p><a href="admin_connexion.php" class="text-secondary">Connexion administrateur</a></p>
         </div>
     </div>
 </body>
